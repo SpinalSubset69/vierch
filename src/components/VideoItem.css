@@ -1,0 +1,54 @@
+.video-item {
+  display: flex !important;
+  align-items: center !important;
+  cursor: pointer;
+  border-right: 1px solid rgba(0, 0, 0, 0.9);
+  margin-top: 5px;
+}
+
+.play {
+  margin: auto;
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px groove rgba(0, 0, 0, 0.9);
+  width: 10%;
+  color: #212425;
+  font-family: Helvetica, sans-serif;
+  visibility: hidden;
+  filter: blur(0.2px);
+
+  /*  RADIANT   */
+  background: rgb(208, 255, 250);
+  background: linear-gradient(
+    90deg,
+    rgba(208, 255, 250, 1) 8%,
+    rgba(157, 230, 229, 1) 89%,
+    rgba(158, 230, 238, 1) 98%
+  );
+}
+.video-item:hover {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 33%,
+    rgba(111, 200, 218, 1) 95%,
+    rgba(72, 159, 176, 1) 100%
+  );
+  border-right: 5px solid rgba(0, 0, 0, 0.9);
+}
+
+.video-item:hover .content {
+  filter: blur(2px);
+}
+.video-item:hover img {
+  filter: blur(2px);
+}
+
+.video-item:hover .play {
+  visibility: visible;
+}
+
+.video-item.item img {
+  max-width: 180px;
+  max-height: 100px;
+}
